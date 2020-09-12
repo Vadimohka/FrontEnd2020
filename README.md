@@ -1,2 +1,2 @@
-# FrontEnd2020
-gh-pages: https://vadimohka.github.io/FrontEnd2020/
+# EMERCOM Safe Center
+Beta view of site pages: https://vadimohka.github.io/FrontEnd2020/
