@@ -55,27 +55,24 @@ body{
     height: 100%;
 }
 
-.header-background{
+.header-line{
     position: absolute;
     height: 100%;
     width: 95px;
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 0;
     text-align: center;
     overflow: hidden;
-    background-color: #000000;
-    opacity: 0.7;
+    background-color: rgba(0,0,0,0.7);
 }
 
 .header-logo{
-    z-index: 3;
     height: 10%;
     width: 95px;
     padding-top: 35px;
     text-align: center;
-    margin-bottom: 200px;
 }
 
 .header-logo h1{
@@ -95,7 +92,9 @@ body{
     padding: 0;
     border: 0;
     outline: 0;
-    margin-bottom: 58px;
+}
+
+.nav-bar{
 }
 
 .nav-links{
@@ -104,12 +103,14 @@ body{
     position: absolute;
     top: 40%;
     left: 0%;
+    bottom: 5%;
     cursor: pointer;
     /* margin: -21px 0 0 -21px; */
     margin-left: -5px;
     background-color: transparent;
     padding: 0;
     border: 0;
+    size: cover;
 }
 
 .nav-link{
@@ -124,6 +125,7 @@ body{
     transform: rotate(-90deg);
     margin-top: 26px;
     margin-left: 45px;  
+    text-align: left;
 }
 
 .excursion{
@@ -138,4 +140,53 @@ body{
 
  div .active{
     color: #d7272e;
+}
+
+.swiper {
+    height: 100vh;
+    max-height: 1080px;
+    width: 100vw;
+    max-width: 1920px;
+    background: url(../resources/img/Center\ of\ Security.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.content{
+    padding-left: 20%;
+    padding-top: 26%;
+}
+
+.logo h2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 82px;
+    max-width: 651px;
+    margin-left: 10%;
+    font-size: 72px;
+    color: white;
+    font-family: 'Roboto';
+    background-color: rgba(161,0,7,0.6);
+    margin-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.logo_text{
+    
+}
+
+.content-position{
+    display: block;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+.content-position a{
+
+    font-family: 'Roboto';
+    color: white;
+    font-size: 30px;
+    padding: 5px 10px;
+    background-color: rgba(83,80,80,0.7);
 }
