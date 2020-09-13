@@ -143,9 +143,9 @@ body{
 
 .swiper {
     height: 100vh;
-    max-height: 1080px;
     width: 100vw;
-    max-width: 1920px;
+    /*max-height: 1080px;
+    max-width: 1920px; */
     background: url(../resources/img/Center\ of\ Security.jpg) center no-repeat;
     background-size: cover;
 }
