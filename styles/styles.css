@@ -21,8 +21,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -153,7 +152,7 @@ body{
 
 .content{
     padding-left: 20%;
-    padding-top: 26%;
+    padding-top: 24%;
 }
 
 .logo h2{
@@ -180,13 +179,35 @@ body{
     display: block;
     margin-left: 10%;
     margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .content-position a{
-
     font-family: 'Roboto';
     color: white;
     font-size: 30px;
     padding: 5px 10px;
     background-color: rgba(83,80,80,0.7);
+}
+
+.swiper-bullet{
+    font-family: 'Roboto medium' ;
+    color: white;
+    font-size: 36px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.active_bullet{
+    background: rgba(156, 18,26, 0.5);
+    text-transform: uppercase;
+}
+
+.social-links{
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-link{
+    margin-right: 18px;
 }
