@@ -146,7 +146,7 @@ body{
     width: 100vw;
     /*max-height: 1080px;
     max-width: 1920px; */
-    background: url(../resources/img/Center\ of\ Security.jpg) center no-repeat;
+    background: url('../resources/img/CenterofSecurity.jpg') center no-repeat;
     background-size: cover;
 }
 
