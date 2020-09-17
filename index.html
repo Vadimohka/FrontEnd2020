@@ -19,6 +19,16 @@
         $(document).ready(function() {
             $('.toggle').click(function() {
                 $('.toggle').toggleClass('toggle-active')
+                $('.menu-wrap').toggleClass('overlay')
+                let index = $('.swiper-pagination').css("z-index");
+                if(index==="10"){
+                    $(".swiper-pagination").css({"z-index": "2"});
+                    check = true;
+                }
+                else{
+                    $(".swiper-pagination").css({"z-index": "10"});
+                    check = true;
+                }
             })
         })
     </script>

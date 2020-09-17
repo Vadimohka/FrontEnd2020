@@ -132,7 +132,6 @@ table {
     border-spacing: 0;
 }
 
-
 /* --- end of reset ---*/
 
 html {
@@ -153,9 +152,9 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 3;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
 }
 
 .header-logo {
@@ -180,6 +179,7 @@ body {
     width: auto;
     transition: transform 300ms;
     opacity: 1;
+    z-index: 2;
 }
 
 .header-logo .Full-logo {
@@ -190,7 +190,7 @@ body {
     transition: transform 300ms;
     opacity: 0;
     transition: opacity .5s;
-    z-index: 999;
+    z-index: 2;
 }
 
 .header-logo:hover .Abb-logo,
@@ -206,7 +206,6 @@ body {
 .nav-bar {
     width: 95px;
     height: inherit;
-    z-index: 11;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -223,7 +222,6 @@ body {
     padding: 0;
     border: 0;
     outline: 0;
-    z-index: 21;
     transform: rotate(90deg);
 }
 
@@ -279,7 +277,6 @@ body {
     padding: 0;
     border: 0;
     size: cover;
-    z-index: 3; 
 }
 
 .nav-link {
@@ -296,7 +293,6 @@ body {
     margin-top: 26px;
     margin-left: 45px;
     text-align: left;
-    z-index: 100; 
 }
 
 .nav-link a {
@@ -319,23 +315,21 @@ body {
 }
 
 .content-section {
-    z-index: -1; 
     height: inherit;
     width: inherit;
     /*max-height: 1080px;
     max-width: 1920px; */
     background: url('../resources/img/CenterofSecurity.jpg') center no-repeat;
     background-size: cover;
+    z-index: 0;
 }
 
 .content {
-    z-index: -1; 
     padding-left: 20%;
     padding-top: 24%;
 }
 
-.logo h2 {
-    z-index: -1; 
+.logo h2 { 
     display: flex;
     justify-content: left;
     align-items: center;
@@ -354,7 +348,6 @@ body {
 .logo_text {}
 
 .content-position {
-    z-index: -1; 
     display: block;
     margin-left: 10%;
     margin-top: 15px;
@@ -362,7 +355,6 @@ body {
 }
 
 .content-position a {
-    z-index: -1; 
     font-family: 'Roboto';
     color: white;
     font-size: 30px;
@@ -378,8 +370,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-    width: auto;
-    z-index: -1; 
+    width: auto; 
     font-family: 'Roboto medium';
     color: white !important;
     font-size: 36px !important;
@@ -395,8 +386,8 @@ body {
     opacity: 1;
 }
 
+
 .swiper-pagination-bullet-active {
-    z-index: -1; 
     background: rgba(156, 18, 26, 0.5);
     color: #000;
 }
@@ -408,7 +399,7 @@ body {
     width: auto;
     display: flex;
     justify-content: flex-end;
-    z-index: 2;
+    z-index: 4;
 }
 
 .social-link {
@@ -416,7 +407,6 @@ body {
 }
 
 .swiper-container .swiper-wrapper .swiper-slide {
-    /*z-index: -1;*/
     height: 90px;
     width: inherit;
     height: inherit;
