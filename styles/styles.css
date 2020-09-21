@@ -505,6 +505,7 @@ body {
     transition: color 0.4s ease;
 }
 /* ----- media ----- */
+/* ----- Height resonsive ----- */
 
 @media (max-height: 895px ){
     .header-logo{
@@ -575,4 +576,10 @@ body {
         padding-top: 10%;
     }
 }
+
+@media (max-height: 635px){
+    
+}
+
+/*------- Width responsive -------- */
 
