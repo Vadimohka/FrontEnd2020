@@ -1,4 +1,4 @@
-var menu = ['Брест', 'Витебск', 'Могилев', 'Минск', 'Гродно', 'Гомель', 'Минская Обл']
+var menu = ['Брест', 'Витебск', 'Могилев', 'Минск', 'Гродно', 'Гомель', 'Минская']
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   speed: 1500,
