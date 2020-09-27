@@ -50,3 +50,9 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
         padding-left: 2.5% ;
     }
 }
+@media (max-width: 375px){
+    .swiper-pagination-bullet {
+        margin:0 2px !important;
+        padding: 0px 2px;
+    }
+}

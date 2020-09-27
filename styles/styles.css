@@ -1081,3 +1081,155 @@ body {
     }
     
 }
+
+/* ----- Iphone X ----- */
+@media (max-width: 375px) and (max-height: 812px){
+    .header-logo{
+        height: 77px;
+        width: 154px;
+        padding-top: 15px;
+    }
+
+    .header-logo .Abb-logo{
+        font-size: 60px;
+    }
+
+    .header-logo .Full-logo {
+        font-family: 'Franklin Gothic Heavy', sans-serif;
+        padding-left: 8px;
+        color: white;
+        font-size: 20px;
+        transition: transform 300ms;
+        opacity: 0;
+        transition: opacity .5s;
+        z-index: 2;
+    }
+    
+    .header-logo:hover .Abb-logo,
+    .header-logo:hover .Full-logo {
+        transform: translateY(-70px);
+        transition: opacity .9s;
+    }
+    
+    .header-logo:hover .Full-logo {
+        opacity: 1;
+    }
+    
+    .nav-bar {
+        height: 77px;
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .bad-toggle{
+        position: absolute;
+        top: -65px;
+        left: 45%;
+    }
+    /* Show menu */
+    
+    .menu-wrap .menu > div > div > ul > li > a{
+        font-family: 'Roboto';
+        color: rgb(158,156,156);
+        font-size: 36px;
+        text-decoration: none;
+        transition: color 0.4s ease;
+    }
+
+    .content {
+        padding-top: 100%;
+        padding-left: 1%;
+    }
+    
+    .logo h2 { 
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 41px;
+        width: 330px;
+        margin-left: 10%;
+        font-size: 36px;
+        color: white;
+        font-family: 'Roboto';
+        background-color: rgba(161, 0, 7, 0.6);
+        margin-bottom: 8px;
+        padding-left: 2px;
+        padding-right: 0px;
+    }
+    
+    .content-position {
+        display: block;
+        margin-left: 10%;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+    
+    .content-position a {
+        font-family: 'Roboto';
+        color: white;
+        font-size: 18px;
+        padding: 2.5px 5px;
+        background-color: rgba(83, 80, 80, 0.7);
+    }
+
+    .swiper-pagination {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0%;
+        overflow-x: auto;
+    }
+
+    .swiper-pagination::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .swiper-pagination-bullet {
+        width: auto; 
+        font-family: 'Roboto medium';
+        color: white !important;
+        font-size: 18px ;
+        margin-left: 0px;
+        padding: 0px 2px;
+        border-radius: 0;
+        width: auto;
+        height: 20px;
+        text-align: center;
+        line-height: 30px;
+        color: #000;
+        opacity: 1;
+    }
+    
+    
+    .swiper-pagination-bullet-active {
+        background: rgba(156, 18, 26, 0.5);
+        color: #000;
+    }
+    
+    .social-links {
+        width: 150px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        z-index: 4;
+    }
+    
+    .social-links a img{
+        width: 70%;
+    }
+
+    .social-link {
+        margin-right: -20px;
+    }
+    
+}
