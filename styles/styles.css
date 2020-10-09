@@ -312,8 +312,13 @@ body {
     font-size: 24px;
     line-height: 30px;
     padding: 20px;
-    overflow: auto;
+    overflow-y: auto;
+    z-index: 10;
     color: white;
+}
+
+.para-info{
+    overflow-y: auto;
 }
 
 .content-position {
