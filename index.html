@@ -10,24 +10,23 @@
     <style>
         @import url('./resources/fonts/FRAHV.TTF');
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="js/swiper-bundle.min.js">
-    <link rel="stylesheet" href="styles/menu.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('.toggle').click(function() {
+        $(document).ready(function () {
+            $('.toggle').click(function () {
                 $('.toggle').toggleClass('toggle-active')
                 $('.menu-wrap').toggleClass('overlay')
                 let index = $('.swiper-pagination').css("z-index");
-                if(index==="10"){
-                    $(".swiper-pagination").css({"z-index": "2"});
-                    check = true;
+                if (index === "10") {
+                    $(".swiper-pagination").css({ "z-index": "2" });
                 }
-                else{
-                    $(".swiper-pagination").css({"z-index": "10"});
-                    check = true;
+                else {
+                    $(".swiper-pagination").css({ "z-index": "10" });
                 }
             })
         })
@@ -47,28 +46,22 @@
                 <span></span>
                 <span></span>
             </div>
-            <div class="nav-links">
-                <div class="nav-link play"><a href='#'>развлечения в центре</a></div>
-                <div class="nav-link excursion"><a href="#">экскурсия в центре</a> </div>
-                <div class="nav-link center active"><a href="#" style="color: #d7272e;">центр безопасности</a></div>
-            </div>
         </div>
     </header>
     <div class="menu-wrap">
-        <input type="checkbox" class="toggle bad-toggle"> 
+        <input type="checkbox" class="toggle bad-toggle">
         <div class="menu">
             <div>
                 <div>
                     <ul>
-                        <li><a href="#">Вопрос-ответ</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Режим Работы</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Центр Безопасности</a></li>
+                        <li><a href="#">Экскурсия в центре</a></li>
+                        <li><a href="#">Развлечения в центре</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-      </div>
+    </div>
     <section class="content-section">
         <!-- Slider main container -->
         <div class="swiper-container">
@@ -82,18 +75,35 @@
                             <h2 class="logo_text">Добро пожаловать</h2>
                             <h2 class="logo_text">В Центр</h2>
                             <h2 class="logo_text">Безопасности</h2>
+                            <div class="content-position">
+                                <a>Где вы находитесь?</a>
+                            </div>
                         </div>
-                        <div class="content-position">
-                            <a>Где вы находитесь?</a>
+                        <div class="center-information">
+                            Открыт в рамках инициативы Могилевского областного управления МЧС
+                            при поддержке проекта... Открыт в рамках инициативы Могилевского областного управления МЧС при поддержке
+                            проекта... Открыт в рамках инициативы Могилевского областного управления МЧC при поддержке проекта...
+                            Открыт в рамках инициативы Могилевского областного управления МЧС при поддержке
+                            проекта...
+                            Открыт в рамках инициативы Могилевского областного управления МЧС
+                            при поддержке проекта...
+                            Открыт в рамках инициативы Могилевского областного управления МЧС при поддержке
+                            проекта...
+                            Открыт в рамках инициативы Могилевского областного управления МЧС
+                            при поддержке проекта...
+                            Открыт в рамках инициативы Могилевского областного управления МЧС при поддержке
+                            проекта...
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="content">
                         <div class="logo">
-                            <h2 class="logo_text">Добро пожаловать</h2>
-                            <h2 class="logo_text">В Центр</h2>
-                            <h2 class="logo_text">Безопасности</h2>
+                            <div class="logo-content">
+                                <h2 class="logo_text">Добро пожаловать</h2>
+                                <h2 class="logo_text">В Центр</h2>
+                                <h2 class="logo_text">Безопасности</h2>
+                            </div>
                         </div>
                         <div class="content-position">
                             <a>Где вы находитесь?</a>
@@ -166,9 +176,12 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="social-links">
-            <a class="social-link" href="https://www.github.com"><img src="./resources/img/MCHS.png" width="92" height="92" alt="Сайт МЧС"></a>
-            <a class="social-link" href="https://www.youtube.com"><img src="./resources/img/youtube_alt.png" width="92" height="92" alt="Youtube"></a>
-            <a class="social-link" href="https://www.instagram.com"><img src="./resources/img/instagram.png" width="92" height="92" alt="Instagram"></a>
+            <a class="social-link" href="https://www.github.com"><img src="./resources/img/MCHS.png" width="92"
+                    height="92" alt="Сайт МЧС"></a>
+            <a class="social-link" href="https://www.youtube.com"><img src="./resources/img/youtube_alt.png" width="92"
+                    height="92" alt="Youtube"></a>
+            <a class="social-link" href="https://www.instagram.com"><img src="./resources/img/instagram.png" width="92"
+                    height="92" alt="Instagram"></a>
         </div>
     </section>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
