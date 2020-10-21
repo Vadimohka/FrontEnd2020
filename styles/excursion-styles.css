@@ -1,0 +1,20 @@
+.excursion_logo h2 { 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 82px;
+    max-width: 600px;
+    margin-left: 10%;
+    font-size: 60px;
+    color: white;
+    font-family: 'Roboto';
+    background-color: rgba(161, 0, 7, 0.6);
+    margin-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.swiper-pagination-bullet{
+    font-size: 48px;
+    margin-right: 20px;
+}

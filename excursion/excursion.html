@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экскурсия в центре</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/excursion-styles.css">
+    <style>
+        @import url('../resources/fonts/FRAHV.TTF');
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../js/swiper-bundle.min.js">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle-main').click(function () {
+                $('.toggle-main').toggleClass('toggle-active')
+                let index = $('.swiper-pagination').css("z-index");
+                if (index === "10") {
+                    $(".menu-wrap").css({"z-index": "3"});
+                    $(".bad-toggle").trigger('click');
+                    $(".swiper-pagination").css({ "z-index": "2" });
+                }
+                else {
+                    $(".menu-wrap").css({"z-index": "1"})
+                    $(".bad-toggle").trigger('click');
+                    $(".swiper-pagination").css({ "z-index": "10" });
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header class="header-line">
+        <div class="header-logo">
+            <h1 class="Abb-logo">ЦБ</h1>
+            <h3 class="Full-logo">Центр</h3>
+            <h3 class="Full-logo">Безопасности</h3>
+        </div>
+        <div class="nav-bar">
+            <div class="toggle-main">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggle bad-toggle" style="display: none;">
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#">Центр Безопасности</a></li>
+                        <li><a href="#">Экскурсия в центре</a></li>
+                        <li><a href="#">Развлечения в центре</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content-section">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="excursion_logo">
+                            <h2 class="logo_text">Площадка</h2>
+                            <h2 class="logo_text">Пройди Тест по ОБЖ</h2>
+                            <div class="content-position">
+                                <a href="../3d-excursions/1/index.html">3D обзор площадки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="excursion_logo">
+                            <h2 class="logo_text">Площадка</h2>
+                            <h2 class="logo_text">Пройди Тест по ОБЖ</h2>
+                            <div class="content-position">
+                                <a href="../3d-excursions/1/index.html">3D обзор площадки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="social-links">
+            <a class="social-link" href="https://www.github.com"><img src="../resources/img/MCHS.png" width="92"
+                    height="92" alt="Сайт МЧС"></a>
+            <a class="social-link" href="https://www.youtube.com"><img src="../resources/img/youtube_alt.png" width="92"
+                    height="92" alt="Youtube"></a>
+            <a class="social-link" href="https://www.instagram.com"><img src="../resources/img/instagram.png" width="92"
+                    height="92" alt="Instagram"></a>
+        </div>
+    </section>
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/main-excursion.js"></script>
+</body>
+
+</html>
