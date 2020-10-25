@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная страница</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+        <style>
+            @import url('./resources/fonts/FRAHV.TTF');
+        </style>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+        <link rel="stylesheet" href="js/swiper-bundle.min.js">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.toggle-main').click(function () {
+                    $('.toggle-main').toggleClass('toggle-active')
+                    let index = $('.swiper-pagination').css("z-index");
+                    if (index === "10") {
+                        $(".menu-wrap").css({"z-index": "3"});
+                        $(".bad-toggle").trigger('click');
+                        $(".swiper-pagination").css({ "z-index": "2" });
+                    }
+                    else {
+                        $(".menu-wrap").css({"z-index": "1"})
+                        $(".bad-toggle").trigger('click');
+                        $(".swiper-pagination").css({ "z-index": "10" });
+                    }
+                })
+            })
+        </script>
+    </head>
+    
+    <body>
+        <div style="display: inline-block;">
+            <span style="display: block; margin-right: 5px; font-size: 24px">Минск</span>
+            <span style="display: block;">Барановичи</span>
+            <span style="display: block;">Барановичи</span>
+        </div>
+        <div style="display: inline-block;">
+            <span style="display: block; margin-right: 5px; font-size: 24px">Минск</span>
+            <span style="display: block;">Барановичи</span>
+            <span style="display: block;">Барановичи</span>
+        </div>
+        <div style="display: inline-block;">
+            <span style="display: block; margin-right: 5px; font-size: 24px">Минск</span>
+            <span style="display: block;">Барановичи</span>
+            <span style="display: block;">Барановичи</span>
+        </div>
+        <div style="display: inline-block;">
+            <span style="display: block; margin-right: 5px; font-size: 24px">Минск</span>
+            <span style="display: block;">Барановичи</span>
+            <span style="display: block;">Барановичи</span>
+        </div>
+        <div style="display: inline-block;">
+            <span style="display: block; margin-right: 5px; font-size: 24px">Минск</span>
+            <span style="display: block;">Барановичи</span>
+            <span style="display: block;">Барановичи</span>
+        </div>
+        '<span class="' + className + ' onclick=displayCity()">' + (menu[index]) + '</span>'
+        '<span style="margin-left:12px">Gomel</span>' +
+        '</div>'
+    </body>
+</html>

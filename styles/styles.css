@@ -277,7 +277,7 @@ body {
 
 .content {
     padding-left: 10.65%;
-    padding-top: 21.5%;
+    padding-top: 17.5%;
 }
 
 .logo{
@@ -346,13 +346,6 @@ body {
     font-size: 30px;
     padding: 5px 10px;
     background-color: rgba(83, 80, 80, 0.7);
-}
-
-.swiper-pagination {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: -5px;
 }
 
 .swiper-pagination-bullet {
@@ -473,6 +466,32 @@ body {
     font-size: 48px;
     text-decoration: none;
     transition: color 0.4s ease;
+}
+
+/* ----- region links ---- */
+.region-links{
+    position: relative;
+    display: inline-block;
+    padding-left: 14.2%;
+    z-index: 4;
+}
+
+.region-link{
+    font-family: 'Roboto medium';
+    color: white !important;
+    font-size: 32px;
+    border-radius: 0;
+    width: auto;
+    text-align: left;
+    line-height: 30px;
+    color: #000;
+    opacity: 1;
+}
+
+.region-link > p{
+    display: inline-block;
+    background: var(--swiper-pagination-color,var(--swiper-theme-color));
+    padding: 5px 5px;
 }
 /* ----- media ----- */
 

@@ -25,11 +25,13 @@
                     $(".menu-wrap").css({"z-index": "3"});
                     $(".bad-toggle").trigger('click');
                     $(".swiper-pagination").css({ "z-index": "2" });
+                    $(".region-links").css({"z-index": "2"})
                 }
                 else {
                     $(".menu-wrap").css({"z-index": "1"})
                     $(".bad-toggle").trigger('click');
                     $(".swiper-pagination").css({ "z-index": "10" });
+                    $(".region-links").css({"z-index": "10"})
                 }
             })
         })
@@ -272,6 +274,47 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
         </div>
+        <div class="region-links">
+            <div id="Brest" class="region-link">
+                <p>Центры Бреста:</p>
+                <p>Столин</p>
+                <p>Брест</p>
+                <p>Каменец</p>
+            </div>
+           <div id="Vitebsk" class="region-link" style="display: none;">
+                <p>Центры Витебска:</p>
+                <p>Барань</p>
+                <p>Витебск</p>
+                <p>Новополоцк</p>
+            </div>
+            <div id="Mogilev" class="region-link Mogilev" style="display: none;">
+                <p>Центры Могилева:</p>   
+                <p>Столин</p>
+                <p>Брест</p>
+                <p>Каменец</p>
+            </div>
+            <div id="Minsk" class="region-link Minsk" style="display: none;">
+                <p>Центры Минска:</p>
+                <p>Олешева</p>
+            </div>
+            <div id="Grodno" class="region-link Grodno" style="display: none;">
+                <p>Центры Гродно:</p>
+                <p>Лида</p>
+                <p>Гродно</p>
+            </div>
+            <div id="Gomel" class="region-link Gomel" style="display: none;">
+                <p>Центры Гомеля:</p>
+                <p>Лицей УГЗ</p>
+                <p>Гомель</p>
+                <p>Мозырь</p>
+                <p>Жлобин</p>
+            </div>
+            <div id="Minskaya" class="region-link Minskaya" style="display: none;">
+                <p>Центры Минской области:</p>
+                <p>Борисов</p>
+                <p>Солигорск</p>
+            </div>
+        </div>
         <div class="social-links">
             <a class="social-link" href="https://www.github.com"><img src="./resources/img/MCHS.png" width="92"
                     height="92" alt="Сайт МЧС"></a>
@@ -283,6 +326,7 @@
     </section>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/displayCity.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 var menu = ['Брест', 'Витебск', 'Могилев', 'Минск', 'Гродно', 'Гомель', 'Минская']
+var engmenu = ['BrestCity', 'VitebskCity', 'MogilevCity', 'MinskCity', 'GrodnoCity', 'GomelCity', 'MinskayaObl']
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   speed: 1500,
@@ -14,7 +15,7 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        return '<span class="' + className + '" onclick=displayCity(this.id) ' + 'id="' + (engmenu[index]) + '">' + (menu[index]) + '</span>';
       },
   },
 
