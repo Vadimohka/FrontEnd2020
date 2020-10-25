@@ -69,5 +69,4 @@ function displayCity(city){
             document.getElementById('Minskaya').style.display = "block";
         }
     }
-    console.log('clicked');
 }
