@@ -34,6 +34,23 @@
                     $(".region-links").css({"z-index": "10"})
                 }
             })
+            $('.swiper-pagination-bullet').click(function(){
+                let arr = $(this).attr('id');
+                if(arr==="BrestCity"){
+                    $('.content-section').removeClass('bg_2');
+                    $('.content-section').animate({'opacity':'toggle'},500,function(){
+                    $('.content-section').toggleClass('bg_1');
+                    $(this).animate({'opacity': "toggle"},500);
+                   });
+                    $('.content-section').toggleClass('bg_1');
+                }
+                else if(arr==="VitebskCity"){
+                    $('.content-section').toggleClass('bg_2');
+                }
+                else if(arr==="MogilevCity"){
+                    $('.content-section').toggleClass('bg_3');
+                }
+            })
         })
     </script>
 </head>
@@ -67,7 +84,7 @@
             </div>
         </div>
     </div>
-    <section class="content-section">
+    <section id="content-section" class="content-section">
         <!-- Slider main container -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->

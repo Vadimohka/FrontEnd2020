@@ -6,6 +6,7 @@ function displayCity(city){
     else{
         displayed=true;
         if(city==="BrestCity"){
+            /*document.getElementById('content-section').style.background = "url('../resources/img/51803a1b6cb2b2fa49e2d0dc2fe6a0ce.jpg') center no-repeat"; */
             document.getElementById('Brest').style.display = "block";
             document.getElementById('Vitebsk').style.display = "none";
             document.getElementById('Mogilev').style.display = "none";
