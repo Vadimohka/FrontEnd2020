@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -120,12 +119,13 @@
                 <div class="swiper-slide">
                     <div class="content">
 
-                        <div class="logo">
+                        <div class="logo" id="BrestLogo">
                             <h2 class="logo_text">Добро пожаловать</h2>
                             <h2 class="logo_text">В Центр</h2>
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
+                                <span class='icon' id="BrestInfo"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
                         <div class="center-information">
@@ -150,12 +150,13 @@
                 <div class="swiper-slide">
                     <div class="content">
 
-                        <div class="logo">
+                        <div class="logo" id="VitebskLogo">
                             <h2 class="logo_text">Добро пожаловать</h2>
                             <h2 class="logo_text">В Центр</h2>
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
+                                <span class='icon' id="VitebskInfo"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
                         <div class="center-information">
@@ -180,12 +181,13 @@
                 <div class="swiper-slide">
                     <div class="content">
 
-                        <div class="logo">
+                        <div class="logo" id="MogilevLogo">
                             <h2 class="logo_text">Добро пожаловать</h2>
                             <h2 class="logo_text">В Центр</h2>
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
+                                <span class='icon' id="MogilevInfo"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
                         <div class="center-information">
@@ -210,12 +212,13 @@
                 <div class="swiper-slide">
                     <div class="content">
 
-                        <div class="logo">
+                        <div class="logo" id="MinskLogo"">
                             <h2 class="logo_text">Добро пожаловать</h2>
                             <h2 class="logo_text">В Центр</h2>
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
+                                <span class='icon' id="MinskInfo" onclick="showinfo()"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
                         <div class="center-information">
@@ -240,12 +243,13 @@
                 <div class="swiper-slide">
                     <div class="content">
 
-                        <div class="logo">
+                        <div class="logo" id="GrodnoLogo">
                             <h2 class="logo_text">Добро пожаловать</h2>
                             <h2 class="logo_text">В Центр</h2>
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
+                                <span class='icon' id="GrodnoInfo" onclick="showinfo()"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
                         <div class="center-information">
@@ -270,12 +274,13 @@
                 <div class="swiper-slide">
                     <div class="content">
 
-                        <div class="logo">
+                        <div class="logo" id="GomeLogo">
                             <h2 class="logo_text">Добро пожаловать</h2>
                             <h2 class="logo_text">В Центр</h2>
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
+                                <span class='icon' id="GomelInfo" onclick="showinfo()"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
                         <div class="center-information">
@@ -300,12 +305,13 @@
                 <div class="swiper-slide">
                     <div class="content">
 
-                        <div class="logo">
+                        <div class="logo" id="MinskayaLogo">
                             <h2 class="logo_text">Добро пожаловать</h2>
                             <h2 class="logo_text">В Центр</h2>
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
+                                <span class='icon' id="MinskayaInfo" onclick="showinfo(this.id)"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
                         <div class="center-information">
@@ -385,6 +391,7 @@
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/displayCity.js"></script>
+    <script type="text/javascript" src="js/showinfo.js"></script>
 </body>
 
 </html>

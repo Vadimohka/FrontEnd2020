@@ -379,7 +379,7 @@ body {
     padding: 20px;
     margin: 0;
     overflow-y: auto;
-    z-index: 10;
+    z-index 10;
     color: white;
 }
 
@@ -396,6 +396,11 @@ body {
 
 .para-info{
     overflow-y: auto;
+}
+
+.icon{
+    display: none;
+    z-index 10;
 }
 
 .content-position {
@@ -559,7 +564,12 @@ body {
     padding: 5px 5px;
 }
 /* ----- media ----- */
-
+/* ----- improve PC experience ----- */
+@media (min-width: 1240px) and (max-width: 1450px){
+    .center-information{
+        width: 320px;
+    }
+}
 /* ----- tablet album ------ */
 
 @media (min-width: 1024px) and (max-width: 1240px) and (orientation: landscape){
@@ -935,7 +945,7 @@ body {
 
     .content {
         padding-left: 0%;
-        padding-top: 60%;
+        padding-top: 50%;
     }
 
     .center-information{
@@ -1033,6 +1043,9 @@ body {
 }
 
 /* ----- Iphone X ----- */
+@media (max-width: 767) and (min-width:662px){
+
+}
 @media (min-width: 375px) and (max-width: 767px) {
     .header-line {
         position: block;
@@ -1137,10 +1150,12 @@ body {
     }
 
     .content {
-        padding-top: 90%;
+        padding-top: 30%;
         padding-left: 0%;
     }
-    
+    .logo{
+        margin-right: 40px ;
+    }
     .logo h2 { 
         display: flex;
         justify-content: left;
@@ -1158,7 +1173,10 @@ body {
     }
 
     .center-information{
-        display: none;
+        width: 250px;
+        height: 150px;
+        font-size: 16px;
+        line-height: 20px;
     }
     
     .content-position {
@@ -1317,5 +1335,15 @@ body {
 @media (width: 1024px) and (height: 600px){
     .content{
         padding-top: 4%;
+    }
+}
+
+@media (max-width: 663px){
+    .center-information{
+        display: none;
+    }
+    .icon{
+        display: inline;
+        vertical-align: middle;
     }
 }
