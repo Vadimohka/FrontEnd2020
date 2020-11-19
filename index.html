@@ -17,6 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            $('.icon').css({"z-index": "20"});
             $('.toggle-main').click(function () {
                 $('.toggle-main').toggleClass('toggle-active')
                 let index = $('.swiper-pagination').css("z-index");
@@ -125,10 +126,10 @@
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
-                                <span class='icon' id="BrestInfo"><img src='./resources/img/info.png'></span>
+                                <span class='icon' id="BrestInfo" onclick="showinfo(this.id)"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
-                        <div class="center-information">
+                        <div id="BrestInformation" class="center-information">
                             <p class="para-info">Открыт в рамках инициативы Могилевского областного управления МЧС
                                 при поддержке проекта... Открыт в рамках инициативы Могилевского областного управления
                                 МЧС при поддержке
@@ -156,10 +157,10 @@
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
-                                <span class='icon' id="VitebskInfo"><img src='./resources/img/info.png'></span>
+                                <span class='icon' id="VitebskInfo" onclick="showinfo(this.id)"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
-                        <div class="center-information">
+                        <div id="VitebskInformation" class="center-information">
                             Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке проекта... Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке
@@ -187,10 +188,10 @@
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
-                                <span class='icon' id="MogilevInfo"><img src='./resources/img/info.png'></span>
+                                <span class='icon' id="MogilevInfo" onclick="showinfo(this.id)"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
-                        <div class="center-information">
+                        <div id="MogilevInformation" class="center-information">
                             Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке проекта... Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке
@@ -218,10 +219,10 @@
                             <h2 class="logo_text">Безопасности</h2>
                             <div class="content-position">
                                 <a>Где вы находитесь?</a>
-                                <span class='icon' id="MinskInfo" onclick="showinfo()"><img src='./resources/img/info.png'></span>
+                                <span class='icon' id="MinskInfo" onclick="showinfo(this.id)"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
-                        <div class="center-information">
+                        <div id="MinskInformation" class="center-information">
                             Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке проекта... Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке
@@ -252,7 +253,7 @@
                                 <span class='icon' id="GrodnoInfo" onclick="showinfo()"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
-                        <div class="center-information">
+                        <div id="GrodnoInformation" class="center-information">
                             Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке проекта... Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке
@@ -274,7 +275,7 @@
                 <div class="swiper-slide">
                     <div class="content">
 
-                        <div class="logo" id="GomeLogo">
+                        <div class="logo" id="GomelLogo">
                             <h2 class="logo_text">Добро пожаловать</h2>
                             <h2 class="logo_text">В Центр</h2>
                             <h2 class="logo_text">Безопасности</h2>
@@ -283,7 +284,7 @@
                                 <span class='icon' id="GomelInfo" onclick="showinfo()"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
-                        <div class="center-information">
+                        <div id="GomelInformation" class="center-information">
                             Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке проекта... Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке
@@ -314,7 +315,7 @@
                                 <span class='icon' id="MinskayaInfo" onclick="showinfo(this.id)"><img src='./resources/img/info.png'></span>
                             </div>
                         </div>
-                        <div class="center-information">
+                        <div id="MinskayaInformation" class="center-information">
                             Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке проекта... Открыт в рамках инициативы Могилевского областного управления МЧС
                             при поддержке
