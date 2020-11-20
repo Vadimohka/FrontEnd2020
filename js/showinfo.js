@@ -10,3 +10,17 @@ function showinfo(city){
         }
     }
 }
+
+function closeinfo(logo_id){
+    console.log(logo_id);
+    let infos = ['BrestInformation','VitebskInformation','MogilevInformation','MinskInformation','GrodnoInformation','GomelInformation','MinskayaInformation'];
+    let logos = ['BrestLogo', 'VitebskLogo', 'MogilevLogo', 'MinskLogo', 'GrodnoLogo', 'GomelLogo', 'MinskayaLogo'];
+    let buttons = ['Brest-close-button', 'Vitebsk-close-button', 'Mogilev-close-button','Minsk-close-button', 'Grodno-close-button', 'Gomel-close-button','Minskaya-close-button'];
+    for(let i = 0; i < buttons.length; i++){
+        if(logo_id===buttons[i]){
+            console.log('done');
+            document.getElementById(logos[i]).style.display = 'block';
+            document.getElementById(infos[i]).style.display = 'none';
+        }
+    }
+}

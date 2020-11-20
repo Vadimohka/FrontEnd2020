@@ -380,7 +380,7 @@ body {
     font-family: 'Roboto';
     font-size: 24px;
     line-height: 30px;
-    padding: 20px;
+    padding: 30px;
     margin: 0;
     overflow-y: auto;
     z-index 10;
@@ -400,6 +400,13 @@ body {
 
 .para-info{
     overflow-y: auto;
+}
+
+.close-button{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: -5px;
 }
 
 .icon{
@@ -1343,6 +1350,9 @@ body {
 }
 
 @media (max-width: 663px){
+    .close-button{
+        display: inline;
+    }
     .center-information{
         width: 75%;
         margin-left: 20px ;
