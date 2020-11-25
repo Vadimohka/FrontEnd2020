@@ -352,6 +352,8 @@ body {
 .logo{
     float: left;
     margin-right: 85px;
+    -webkit-transition: opacity 0.25s linear;
+    transition: opacity 0.25s linear;
 }
 
 .logo h2 { 
@@ -383,8 +385,10 @@ body {
     padding: 30px;
     margin: 0;
     overflow-y: auto;
-    z-index 10;
+    z-index: 10;
     color: white;
+    -webkit-transition: opacity 0.25s linear;
+    transition: opacity 0.25s linear;
 }
 
 .center-information::-webkit-scrollbar{
