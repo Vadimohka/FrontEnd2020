@@ -1,4 +1,5 @@
-var menu = ['1', '2']
+var menu = ['1', '2', '3', '4', '5']
+var engmenu = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5']
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   speed: 1500,
@@ -14,7 +15,7 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
       renderBullet: function (index, className) {
-        return '<span style="border-radius: 50%; padding: 0px 15px;"class="' + className + '">' + (menu[index]) + '</span>';
+        return '<span style="border-radius: 50%; padding: 0px 15px;" class="' + className + '"id="' + (engmenu[index]) + '">' + (menu[index]) + '</span>';
       },
   },
 

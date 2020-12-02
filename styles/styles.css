@@ -182,7 +182,7 @@ body {
     }
       
     .bg-grad.two{
-    background: url(../resources/img/51803a1b6cb2b2fa49e2d0dc2fe6a0ce.jpg) no-repeat;
+    background: url(../resources/img/CenterofSecurity.jpg) no-repeat;
     background-size:cover;
     -webkit-background-size:cover;
     }
@@ -377,7 +377,7 @@ body {
     position: relative;
     float: left;
     background-color: rgba(0,0,0,.70);
-    width: 505px;
+    width: 705px;
     height: 290px;
     font-family: 'Roboto';
     font-size: 24px;

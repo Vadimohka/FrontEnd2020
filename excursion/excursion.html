@@ -16,6 +16,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="../js/swiper-bundle.min.js">
+    <link rel="stylesheet" href="styles/adaptive.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -33,11 +34,49 @@
                     $(".swiper-pagination").css({ "z-index": "10" });
                 }
             })
+            $('.nav-link').click(function () {
+                $(".menu-wrap").css({ "z-index": "1" })
+                $(".bad-toggle").trigger('click');
+                $(".swiper-pagination").css({ "z-index": "10" });
+                $(".region-links").css({ "z-index": "10" })
+            })
+            $('.swiper-pagination-bullet').click(function () {
+                var transtime = 2500;
+                var numbgColors = $('.bg-grad').length;
+                let id = $(this).attr('id');
+                if (id === 'slide1') {
+                    $('.bg-grad.active').removeClass('active');
+                    $('.bg-grad.one').addClass('active')
+                }
+                else if (id === 'slide2') {
+                    $('.bg-grad.active').removeClass('active');
+                    $('.bg-grad.two').addClass('active')
+                }
+                else if (id === 'slide3') {
+                    $('.bg-grad.active').removeClass('active');
+                    $('.bg-grad.three').addClass('active')
+                }
+                else if (id === 'slide4') {
+                    $('.bg-grad.active').removeClass('active');
+                    $('.bg-grad.four').addClass('active')
+                }
+                else if (id === 'slide5') {
+                    $('.bg-grad.active').removeClass('active');
+                    $('.bg-grad.five').addClass('active')
+                }
+            })
         })
     </script>
 </head>
 
 <body>
+    <div class="bg-wrapper">
+        <div class="bg-grad one active"></div>
+        <div class="bg-grad two"></div>
+        <div class="bg-grad three"></div>
+        <div class="bg-grad four"></div>
+        <div class="bg-grad five"></div>
+    </div>
     <header class="header-line">
         <div class="header-logo">
             <h1 class="Abb-logo">ЦБ</h1>
@@ -75,8 +114,8 @@
                 <div class="swiper-slide">
                     <div class="content">
                         <div class="excursion_logo">
-                            <h2 class="logo_text">Площадка</h2>
-                            <h2 class="logo_text">Пройди Тест по ОБЖ</h2>
+                            <h2 class="logo_text" style="width: 750px;">Площадка</h2>
+                            <h2 class="logo_text" style="width: 750px;">Общественный транспорт</h2>
                             <div class="content-position">
                                 <a href="../3d-excursions/1/index.html">3D обзор площадки</a>
                             </div>
@@ -87,14 +126,48 @@
                     <div class="content">
                         <div class="excursion_logo">
                             <h2 class="logo_text">Площадка</h2>
-                            <h2 class="logo_text">Пройди Тест по ОБЖ</h2>
+                            <h2 class="logo_text">Поведения на карьерах и болотах</h2>
                             <div class="content-position">
                                 <a href="../3d-excursions/1/index.html">3D обзор площадки</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="excursion_logo">
+                            <h2 class="logo_text" style="width: 500px;">Площадка</h2>
+                            <h2 class="logo_text" style="width: 500px;">Фойе</h2>
+                            <div class="content-position">
+                                <a href="../3d-excursions/1/index.html">3D обзор площадки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="excursion_logo">
+                            <h2 class="logo_text" style="width: 600px;">Площадка</h2>
+                            <h2 class="logo_text" style="width: 600px;">Пройди Тест по ОБЖ</h2>
+                            <div class="content-position">
+                                <a href="../3d-excursions/1/index.html">3D обзор площадки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="excursion_logo">
+                            <h2 class="logo_text" style="width: 600px;">Площадка</h2>
+                            <h2 class="logo_text" style="width: 600px;">Безопасность дома</h2>
+                            <div class="content-position">
+                                <a href="../3d-excursions/1/index.html">3D обзор площадки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 </div>
                 ...
             </div>
